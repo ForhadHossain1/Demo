@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contain{
+    display: flex;
+    margin: auto;
+    margin-left: 10px;
+    background-color: black;
+    height: 75px;
+}
+.contain .right, .contain .left{
+    margin: auto;
+    padding: 4px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+nav ul{
+    background-color: rgb(133, 18, 133);
+    display: flex;
+   justify-content: center;
+   width: 90%;
+    float: left;
+}
+
+nav ul li{
+    padding: 15px 5px;
+    list-style: none;
+    text-align: center;
+    
+    margin: auto;
+} 
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+nav ul li:hover,nav ol li:hover{
+    background-color: blue;
+    color: black;
+}
+nav ol{
+    float: left;
+    background-color: rgb(133, 18, 133);
+    width: 10%;
+    text-align: center;
+    display: flex;
+} 
+ nav ol li{
+    list-style: none;
+    margin: auto;
+ }
+ nav ol li img{
+    padding: 15px 5px;
+    width: 40px;
+    border-radius: 100%;
+}
+ header .header-wrap{
+     background-color: rgb(12, 117, 143);
+    background-image: url(Image/banner.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+header .header-wrap h1{
+
+    font-size: 3rem;
+    margin-left: 30px;
+}
+header .header-wrap h1 b{
+    font-size: 5rem;
+}
+header .header-wrap p{
+    width: 40%;
+    font-size: 1rem;
+    margin: 10px 20px;
+}
+main{
+     background-color: rgb(235, 240, 243);
+     width: 90%;
+     margin: 0 auto;
+     min-height: 60vh;
+ }
+main .main-wrap h6{
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+}
+footer{
+    background-color: darkblue;
+}
+footer .foot-wrap{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+footer .foot-wrap img{
+    width: 64px;
+    margin: auto;
+    border-radius: 20px;
+}
+/* ===  media quary starts here ====*/
+
+@media screen and (max-width:800px){
+    body{
+        border: rgb(226, 58, 58) solid 2px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        padding: 2px;
+        min-width: 350px;
+    }
+    .contain{
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contain .left{
+        text-align: center;
+        padding: 5px;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .contain .right{
+        text-align: center;
+        font-size: 12px;
+    }
+    nav{
+       height: 495px;
+    }
+    nav ul {
+        margin: 0;
+        display: block;
+        width: 100%;
+       
+    } 
+    nav ul li{
+        background-color: rgb(116, 124, 102);
+        margin: 5px;
+    }
+    nav ol{
+        display: block;
+        width: 100%;
+    }
+    nav ol li{
+        float: left;
+        background-color: darkcyan;
+        width: 47%;
+        margin: 0 5px;
+    }
+    nav ul li:hover,nav ul li:hover{
+        background-color: blue;
+        border-top-right-radius: 100px;
+    }
+    header .header-wrap{
+      
+      
+       background-position: top;
+       background-size:  100% auto;
+   }
+   header .header-wrap h1{
+       margin: 10px;
+       padding: 0 ;
+       font-size: 1rem;
+   }
+   header .header-wrap h1 b{
+    font-size: 2rem;
+   }
+   header .header-wrap h1 b{
+    font-size: 2rem;
+    }
+     header .header-wrap p{
+         background-color: whitesmoke;
+        text-align: left;
+        width: 100%;
+        margin-top:45px;
+        box-sizing: border-box;
+    }
+    footer .foot-wrap{
+        height: 50px;
+    }
+    footer .foot-wrap img{
+        width: 32px;
+        margin: auto;
+        border-radius: 20px;
+    }
+}
